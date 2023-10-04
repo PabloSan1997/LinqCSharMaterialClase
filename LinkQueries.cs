@@ -87,4 +87,9 @@ public class LinqQueries
     {
         return librosCollection.Min(p=>p.PublishedDate);
     }
+
+    public IEnumerable<IGrouping<int, Books>> LibrosDespuesdel2000AgrupadosporAno()
+    {
+        return librosCollection.Where(p=> p.PublishedDate.Year >= 2000).GroupBy(p=> p.PublishedDate.Year);
+    }
 }
