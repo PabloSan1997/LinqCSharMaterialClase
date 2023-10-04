@@ -25,6 +25,19 @@ void PrintValues(IEnumerable<Books> listaLibros){
 
 // PrintValues(queries.LibrosDePython());
 
-PrintValues(queries.LibrosDeJavaNombreAcendente());
-Console.WriteLine("\n\nDescendente\n");
-PrintValues(queries.LibrosDeMas450PaginasDecreciente());
+// PrintValues(queries.LibrosDeJavaNombreAcendente());
+// Console.WriteLine("\n\nDescendente\n");
+// PrintValues(queries.LibrosDeMas450PaginasDecreciente());
+
+// PrintValues(queries.TresLibrosPorfechaDeJava());
+
+// PrintValues(queries.TercerYCuartoLibroDeMas400Paginas());
+
+// foreach( var i in queries.TresPrimerosLibrosDeLaColeccion()){
+//     Console.Write($"{i.Title} {i.PageCount}");
+// }
+
+// Console.Write(queries.CantidadLibrosEntre200y500Pag());
+
+Console.Write(queries.FechaDePublicacionMenor());
+
